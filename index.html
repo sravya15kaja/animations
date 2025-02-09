@@ -4,147 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animations</title>
-    <style>
-        .k{
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            gap: 14px;
-        
-        }
-        .k1{
-            background-color: rgb(20, 228, 48);
-            border-radius: 20px;
-            height: 20px;
-            width: 20px;
-            animation-name: change;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-delay: 1s;
-        }
-        .k2{
-            background-color: rgb(20, 228, 48);
-            border-radius: 20px;
-            height: 20px;
-            width: 20px;
-            animation-name: change;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-delay: 1s;
-        
-            
-        }
-        .k3{
-            background-color: rgb(20, 228, 48);
-            border-radius: 20px;
-            height: 20px;
-            width: 20px;
-            animation-name: change;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-delay: 1s;
-        }
-        .s{
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            padding-top: 20%;
-            gap: 10px;
-        }
-        .s1{
-            background-color: red;
-            border-radius: 20px;
-            width: 20px;
-            height: 20px;
-            animation-name: moving;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-delay: 1s;
-
-        }
-        .s2{
-           
-            background-color: red;
-            border-radius: 20px;
-            width: 20px;
-            height: 20px; 
-            animation-name: moving;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-delay: 2s;
-        }
-        .s3{
-            
-            background-color: red;
-            border-radius: 20px;
-            width: 20px;
-            height: 20px;
-            animation-name: moving;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-delay: 3s;
-        }
-        .b{           
-          margin-left: 40%;
-        }
-        .b1:hover~img{
-            transform: translate(100px,100px);
-        }
-        .b2:hover~img{
-            transform: rotate(180deg);
-        }
-        .b3:hover~img{
-            transform: scale(0.5);
-        }
-        .b4:hover~img{
-            transform: skew(30deg,30deg);
-        }
-        @keyframes moving {
-            0%{
-                transform: translate(0px,-100px);
-            }
-            50%{
-                transform: translate(0px,0px);
-            }
-            100%{
-                transform: translate(0px,-100px);
-            }
-        }
-
-        @keyframes change {
-            0%{
-                transform:  scale(0.5);
-                background-color: rgb(127, 240, 151);
-            }
-            50%{
-                transform: scale(1.5);
-                background-color: rgb(127, 240, 151);
-            }
-            100%{
-                transform: scale(0.5);
-                background-color: rgb(127, 240, 151);
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- moving circles -->
     <div class="s">
         <div class="s1"></div>
         <div class="s2"></div>
         <div class="s3"></div>
     </div><br>
+    <!-- growing circles -->
     <div class="k">
         <div class="k1"></div>
         <div class="k2"></div>
         <div class="k3"></div>
     </div><br><br>
+    <!-- css animations -->
     <div class="b">
         <button class="b1">translate</button>
         <button class="b2">rotate</button>
         <button class="b3">scale</button>
-        <button class="b4">skew</button><br><br><br>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/024/669/489/small_2x/mountain-countryside-landscape-at-sunset-dramatic-sky-over-a-distant-valley-green-fields-and-trees-on-hill-beautiful-natural-landscapes-of-the-carpathians-generative-ai-variation-5-photo.jpeg" style="height: 30vh;width: 30%;">
+        <button class="b4">skew</button><br><br><br><br><br>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/024/669/489/small_2x/mountain-countryside-landscape-at-sunset-dramatic-sky-over-a-distant-valley-green-fields-and-trees-on-hill-beautiful-natural-landscapes-of-the-carpathians-generative-ai-variation-5-photo.jpeg" style="height: 30vh;width: 30%;" alt="Image is not loaded">
     </div>
 </body>
 </html>
